@@ -1,0 +1,27 @@
+.md-typeset a { 
+    text-decoration: underline; 
+  }
+/*   .md-typeset h1, h2 { 
+    color: #003865; 
+  } */
+/* put a border around images */
+/* .glightbox img {
+    border: .075rem solid #97999B;
+    border-radius: .2rem;
+    box-shadow: var(--md-shadow-z1);
+    display: flow-root;
+    padding: 1rem;
+  } */
+
+#print-site-cover-page .cover-title {
+  padding-top: 350px;
+}
+#print-site-cover-page h1 {
+  text-align: right;
+}
+#print-site-cover-page .credit {
+  color: slategray;
+  font-style: italic;
+  font-size: .5rem;
+  text-align: right;
+}

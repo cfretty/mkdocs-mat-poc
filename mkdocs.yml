@@ -1,0 +1,121 @@
+# Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
+#Project Information
+site_name: Tech Docs
+#site_url:
+site_author: CF
+site_description: >-
+  Tech doc site PoC using Material for MkDocs theme.
+
+copyright: Copyright &copy; 2023 CFretty
+theme:
+  favicon: assets/images/north-star.png
+  features:
+    - navigation.indexes #overview pages
+    - navigation.path #breadcrumb navigation, currently for insiders only
+    - navigation.tabs #adds top-level sections in menu layer below the header
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  logo: assets/images/north-star.png
+  name: material
+  palette:
+    accent: deep orange
+    primary: blue grey
+
+plugins:
+ - search
+ - glightbox:
+     touchNavigation: true
+     loop: false
+     effect: zoom
+     slide_effect: slide
+     width: "100%"
+     height: auto
+     zoomable: true
+     draggable: true
+     auto_caption: false
+     caption_position: bottom
+ - print-site:
+     add_cover_page: true
+     cover_page_template: 'docs/assets/templates/custom_cover.tpl'
+     add_to_navigation: true
+     print_page_title: 'Print'
+     add_print_site_banner: false
+     enumerate_headings: false
+
+extra_css:
+ - assets/stylesheets/extra.css
+
+#Extensions
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: 🔗&#xFE0E;
+      permalink_title: This is the anchor link to this section.
+      title: On this page
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+  # Page tree see https://www.mkdocs.org/user-guide/configuration/#nav
+nav:
+  - Hello: index.md
+  - Get Started: 
+    - quickstart/index.md
+  - Configure:
+    - configure/index.md
+  - User Guide:
+    - howto/index.md
+  - Reference:
+    - reference/index.md
+
