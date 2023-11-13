@@ -38,7 +38,7 @@ To create a virtual env (one time task):
 
 * In Powershell or VS Code Terminal from the local repo folder, `python -m venv venv`
 * Then `venv\Scripts\activate`
-* You will see prompt now includes "venv" i.e. `(venv)C:\ProjectDir\gitreponame>`
+* You will see prompt now includes "venv" i.e. `(venv)C:\ProjectDir\<gitreponame>`
 * Confirm you are running virtual env by checking pip version `pip --version` the response should show pip from repo venv\Lib location.
 
 With each VSCode session, activate virtual env. Type `venv\Scripts\activate`
