@@ -29,6 +29,7 @@ copyright: Copyright &copy; 2023 CFretty
 theme:
   favicon: assets/images/north-star.png
   features:
+    - content.code.copy
     - navigation.indexes #overview pages
     - navigation.path #breadcrumb navigation, currently for insiders only
     - navigation.tabs #adds top-level sections in menu layer below the header
@@ -112,10 +113,37 @@ nav:
   - Hello: index.md
   - Get Started: 
     - quickstart/index.md
+    - Install: quickstart/install-basics.md
+    - Create: quickstart/create-basic.md
+    - The more you know: quickstart/other-info.md
+    - Next: quickstart/next-steps.md
   - Configure:
     - configure/index.md
+    - Customize: configure/customizing.md
+    - Optimize: configure/optimizing.md
+    - Extend: configure/extending.md
+    - Upgrade: configure/upgrading.md
   - User Guide:
     - howto/index.md
+    - Create new: howto/creating-new-thing.md
+    - Update existing: howto/updating-existing-things.md
+    - Delete: howto/deleting-things.md
+    - Analyze and report: howto/analyzing-reporting.md
+    - Manage: howto/managing-things.md
   - Reference:
     - reference/index.md
+    - reference/roles-permissions.md
+    - Workflow:
+      - reference/workflow.md
+      - Process 1: reference/process-one.md
+      - Process 2: reference/process-two.md
+      - Process 3: reference/process-three.md
+    - UI:
+      - Tab 1: reference/tab-one.md
+      - Tab 2: reference/tab-two.md
+      - Tab 3: reference/tab-three.md
+      - Tab 4: reference/tab-four.md
+      - Tab 5: reference/tab-five.md
+    - reference/dashboards.md
+    - reference/reports.md
 
