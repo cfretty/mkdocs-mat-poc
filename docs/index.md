@@ -13,6 +13,8 @@ Greetings! This site is a proof of concept experiment to see if docs as code wit
 
 Print functionality [mkdocs-print-site-plugin ↗](https://github.com/timvink/mkdocs-print-site-plugin) by Tom Vink
 
+Open external links in a new tab functionality [mkdocs-open-in-new-tab ↗](https://github.com/JakubAndrysek/mkdocs-open-in-new-tab) by Jakub Andrysek
+
 Text from:
 
 * [A Happy Lorem Ipsum: Bob Ross quotes generator ↗](https://www.bobrosslipsum.com/)
