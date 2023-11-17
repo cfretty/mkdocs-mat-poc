@@ -30,3 +30,19 @@ jobs:
               mkdocs-open-in-new-tab \
               mkdocs-print-site-plugin
       - run: mkdocs gh-deploy --force
+
+  html2pdf:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ntdesmond/html2pdf-action@v1
+        with:
+          path: https://cfretty.github.io/mkdocs-mat-poc/print_page/index.html
+          output: ./test.pdf
+          options: |
+            {"format": "letter"}
+      - uses: actions/upload-artifact@v3
+        with:
+          path: ./test.pdf
+      
