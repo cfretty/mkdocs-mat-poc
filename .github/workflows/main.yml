@@ -27,5 +27,6 @@ jobs:
       - run: pip install \ 
               mkdocs-material \
               mkdocs-glightbox \
+              mkdocs-open-in-new-tab \
               mkdocs-print-site-plugin
       - run: mkdocs gh-deploy --force
