@@ -31,6 +31,7 @@ Install and configure plugins:
 
 * [Lightbox ↗](https://squidfunk.github.io/mkdocs-material/reference/images/#lightbox)
 * [MkDocs Print Site ↗](https://github.com/timvink/mkdocs-print-site-plugin)
+* [MkDocs - Open in a new tab ↗](https://github.com/JakubAndrysek/mkdocs-open-in-new-tab)
 
 Recommend using a Python virtual environment.
 
